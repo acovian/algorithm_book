@@ -1,0 +1,19 @@
+<script type="text/javascript">
+  function thing(arr){
+    if (arr.length > 1){
+      var new_arr = []
+      var i = 1
+      var num = 0
+      while(i < arr.length){
+        new_arr.push(i);
+        i++
+        num += 1
+      }
+      console.log(num);
+      return new_arr;
+    } else {
+      console.log("Error")
+    }
+  }
+  thing([3])
+</script>

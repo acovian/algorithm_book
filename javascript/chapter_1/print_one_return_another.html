@@ -1,0 +1,15 @@
+<script type="text/javascript">
+  function print_one_return_another(arr){
+    for(var i = 0; i < arr.length; i++){
+      if(i == arr.length - 2){
+        console.log(arr[i]);
+      }
+    }
+    for(var j = 0; j < arr.length; j++){
+      if(arr[j] % 2 != 0){
+        return(arr[j])
+      }
+    }
+  }
+  print_one_return_another([5, 4, 7, 19, 23, 45])
+</script>

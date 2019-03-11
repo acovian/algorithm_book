@@ -1,0 +1,12 @@
+<script type="text/javascript">
+  function flexible(lowNum, highNum, mult){
+    var num = highNum
+    while (num > lowNum){
+      if(num % mult == 0){
+        console.log(num)
+      }
+      num--
+    }
+  }
+  flexible(0, 2016, 4)
+</script>

@@ -1,0 +1,17 @@
+<script type="text/javascript">
+  function leap_year(year){
+    if (year % 400 == 0){
+      if (year % 100 == 0 && year % 400 != 0){
+        console.log("NOT")
+      }
+      else {
+        console.log("IS")
+      }
+    } else if (year % 4 == 0 && year % 100 != 0){
+      console.log("IS")
+    }else {
+      console.log("NOT")
+    }
+  }
+  leap_year(400)
+</script>

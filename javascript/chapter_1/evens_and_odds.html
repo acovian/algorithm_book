@@ -1,0 +1,14 @@
+<script type="text/javascript">
+  function evens_and_odds(arr){
+    for(var i = 0; i < arr.length; i++){
+      if(arr[i] == arr[i-1] && arr[i] == arr[i+1]){
+        if(arr[i] % 2 != 0){
+          console.log("That's odd!")
+        } else {
+          console.log("Even more so!")
+        }
+      }
+    }
+  }
+  evens_and_odds([13, 13, 13, 14, 14, 14])
+</script>
