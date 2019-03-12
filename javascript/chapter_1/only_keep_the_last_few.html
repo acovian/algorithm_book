@@ -1,0 +1,11 @@
+<script type="text/javascript">
+  function keep_last(arr, x){
+    new_arr = []
+    for(var i = arr.length - x; i < arr.length; i++){
+      new_arr.push(arr[i]);
+    }
+    arr = new_arr
+    console.log(arr)
+  }
+  keep_last([2, 4, 6, 8, 10], 3)
+</script>
