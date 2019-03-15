@@ -1,7 +1,17 @@
 <script type="text/javascript">
   function whatHappensToday(){
-    
-  }
+    var chance = Math.floor(Math.random() * 100)
+    if(chance >= 0 && chance <= 10){
+      console.log("VOLCANO")
+    } else if(chance > 10 && chance <= 25){
+      console.log("TSUNAMI")
+    } else if(chance > 25 && chance <= 45){
+      console.log("EARTHQUAKE")
+    } else if(chance > 45  && chance <= 75){
+      console.log("BLIZZARD")
+    } else if(chance > 75){
+      console.log("METEOR STRIKE")
+    }
   }
 
   whatHappensToday()
