@@ -1,7 +1,18 @@
 <script type="text/javascript">
   function whatReallyHappened(){
-    var random = Math.random() * 100
-    var chance = Math.floor(random)
+    var chance_volcano = Math.floor(Math.random() * 100)
+    if(chance_volcano > 0 && chance_volcano <= 10){
+      console.log("VOLCANO")
+    } else {
+      console.log("no volcano today")
+    }
+
+    var chance_tsunami = Math.floor(Math.random() * 100)
+    if(chance_tsunami > 10 && chance_tsunami <= 25){
+      console.log("TSUNAMI")
+    } else {
+      console.log("no tsunami today")
+    }
   }
   whatReallyHappened();
 </script>
