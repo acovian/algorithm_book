@@ -13,6 +13,27 @@
     } else {
       console.log("no tsunami today")
     }
+
+    var chance_earthquake = Math.floor(Math.random() * 100)
+    if(chance_earthquake > 25 && chance_earthquake <= 45){
+      console.log("EARTHQUAKE")
+    } else {
+      console.log("no earthquake today")
+    }
+
+    var chance_blizzard = Math.floor(Math.random() * 100)
+    if(chance_blizzard > 45 && chance_blizzard <= 70){
+      console.log("BLIZZARD")
+    } else {
+      console.log("no blizzard today")
+    }
+
+    var chance_meteor = Math.floor(Math.random() * 100)
+    if(chance_meteor > 70 && chance_meteor <= 100){
+      console.log("METEOR STRIKE")
+    } else {
+      console.log("no meteor strike today")
+    }
   }
   whatReallyHappened();
 </script>
