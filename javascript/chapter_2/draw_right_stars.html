@@ -1,0 +1,14 @@
+<script type="text/javascript">
+  function drawRightStars(num){
+    var star_field = ""
+    for(var i = 0; i <= 75; i++){
+      if(i < 75-num){
+        star_field += " "
+      } else {
+        star_field += "*"
+      }
+    }
+    console.log(star_field)
+  }
+  drawRightStars(16)
+</script>
