@@ -1,5 +1,14 @@
 <script type="text/javascript">
   function drawRightChars(num, char){
-    var char_field 
+    var char_field = ""
+    var num_0 = 75 - num
+    for(var i = 0; i < num_0; i++){
+      char_field += " "
+    }
+    for(var j = 0; j <= num; j++){
+      char_field += char
+    }
+    console.log(char_field)
   }
+  drawRightChars(17, "x")
 </script>
