@@ -1,4 +1,18 @@
 <script type="text/javascript">
-  var char_field = ""
-  
+  function drawCenteredChars(num, char){
+    var char_field = ""
+    var num_0 = 75 - num
+    var num_1 = num_0 / 2
+    for(var i = 0; i < num_1; i++){
+      char_field += " "
+    }
+    for(var j = 0; j <= num; j++){
+      char_field += char
+    }
+    for(var k = 0; k < num_1; k++){
+      char_field += " "
+    }
+    console.log(char_field)
+  }
+  drawCenteredChars(18, "3")
 </script>
