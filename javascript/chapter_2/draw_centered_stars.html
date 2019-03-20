@@ -1,0 +1,18 @@
+<script type="text/javascript">
+  function drawCenteredStars(num){
+    var star_field = ""
+    var num_0 = 75 - num
+    var num_1 = num_0/2
+    for(var i = 0; i <= num_1; i++){
+      star_field += " "
+    }
+    for(var i = 0; i <= num; i++){
+      star_field += "*"
+    }
+    for(var i = 0; i <= num_1; i++){
+      star_field += " "
+    }
+    console.log(star_field)
+  }
+  drawCenteredStars(16)
+</script>
