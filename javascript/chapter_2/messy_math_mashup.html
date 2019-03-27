@@ -1,0 +1,20 @@
+<script type="text/javascript">
+  function messyMath(num){
+    var sum = 0;
+    for(var count = 0; count <= num; count++){
+      var mult = count * 2
+      if(count % 3 == 0){
+
+      } else if(count % 7 == 0){
+        sum += mult
+      } else if(count == num / 3){
+        return -1
+      } else {
+        sum += count
+      }
+    }
+    return sum
+  }
+
+  messyMath(15)
+</script>
